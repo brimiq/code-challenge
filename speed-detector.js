@@ -8,6 +8,7 @@ function carSpeedometer(carSpeed){
    //for example if the speed = 80 , 80-70=10 then if we divide that by 5 we get 2
    //hence two demerits(points) will be awarded
     const points = Math.floor((carSpeed-70)/5)
+//Math.floor prevents it from over awarding points/demrits
     if(points>12){
        return "Licence terminated"
     }else{
